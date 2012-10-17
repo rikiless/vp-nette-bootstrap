@@ -1,0 +1,25 @@
+{
+	"name": "rikiless/vp-nette-bootstrap",
+	"type": "nette-addon",
+	"description": "visual paginator addon for nette framework with template modified to integrate with twitter bootstrap",
+	"keywords": ["paginator", "nette", "bootstrap", "latte"],
+	"homepage": "http://addons.nette.org/cs/visualpaginator",
+	"license": "BSD-3",
+	"authors": [
+		{
+			"name": "David Grudl",
+			"email": "david@grudl.com",
+			"homepage": "http://davidgrudl.com"
+		},
+		{
+			"name": "Richard Tekel",
+			"homepage": "http://www.rikiho.net/"
+		}
+	],
+	"autoload": {
+		"classmap": [ "VisualPaginator.php" ]
+	},
+	"require": {
+		"nette/nette": "2.0.*"
+	}
+}
