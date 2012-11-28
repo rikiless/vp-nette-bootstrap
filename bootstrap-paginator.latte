@@ -7,7 +7,7 @@
  *}
 
 {if $paginator->pageCount > 1}
-<div class="pagination pagination-centered">
+<div class="pagination{if $option1} pagination-{$option1}{/if}{if $option2} pagination-{$option2}{/if}">
 	<ul>
 		{if $paginator->isFirst()}
 		<li class="disabled"><a href="#">&larr;</a></li>

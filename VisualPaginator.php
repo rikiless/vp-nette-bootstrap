@@ -52,7 +52,7 @@ class VisualPaginator extends \Nette\Application\UI\Control
 	 * Renders paginator.
 	 * @return void
 	 */
-	public function render()
+	public function render($option1 = 'centered', $option2 = '')
 	{
 		$paginator = $this->getPaginator();
 		$page = $paginator->page;
@@ -70,6 +70,8 @@ class VisualPaginator extends \Nette\Application\UI\Control
 			$steps = array_values(array_unique($arr));
 		}
 
+		$this->template->option1 = $option1;
+		$this->template->option2 = $option2;
 		$this->template->steps = $steps;
 		$this->template->paginator = $paginator;
 		$this->template->setFile(__DIR__ . '/bootstrap-paginator.latte');
