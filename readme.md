@@ -6,14 +6,14 @@ http://addons.nette.org/cs/visualpaginator (czech)
 
 ## use ##
 
-###php
+in php (presenter):
 
 ``public function createComponentVp()
 {
 	return new \Nette\Extras\Addons\VisualPaginator;
 }``
 
-###latte
+in latte:
 
 ``
 {control vp}
@@ -24,12 +24,11 @@ http://addons.nette.org/cs/visualpaginator (czech)
 - **size**: ``medium`` *(def.)*, ``mini``, ``small`` and ``large``
 - **align**: ``centered`` *(def.)*, ``left`` and ``right``
 
-**example**:
+###examples###
 
-``
-{control vp left}
-{control vp, right, large}
-``
+``{control vp left}``
+
+``{control vp, right, large}``
 
 ## authors ##
 
