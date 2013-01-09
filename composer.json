@@ -20,6 +20,6 @@
 		"classmap": [ "VisualPaginator.php" ]
 	},
 	"require": {
-		"nette/nette": "2.0.*"
+		"nette/nette": "*"
 	}
 }
